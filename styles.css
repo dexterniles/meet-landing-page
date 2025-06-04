@@ -1,6 +1,186 @@
+@font-face {
+    font-family: "red-hat";
+    src: url(font/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "red-hat";
 }
 
+body {
+    height: 100dvh;
+}
+
+#contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 3.5rem;
+}
+
+#top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+#topText {
+    min-width: 394px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 110%;
+    text-align: center;
+    color: #28283D;
+}
+
+#topTextDescription {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 150%;
+    text-align: center;
+    color: #87879D;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#downloadTop, #whatIsIt, #downloadBottom {
+    border-radius: 20px;
+    border-style: none;
+    padding: 16px 40px;
+}
+
+#downloadTop {
+    background-color: #4D96A9;
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+#teal {
+    color: #8FE3F9;
+}
+
+#whatIsIt {
+    background-color: #855FB1;
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+#gridImage {
+    width: 256px;
+    height: 256px;
+    border-radius: 12px;
+}
+
+#middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+#imageGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 4em;
+}
+
+#middleText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 550px;
+}
+
+#middleTextTop {
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 110%;
+    color: #4D96A9;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 110%;
+    text-align: center;
+    color: #28283D;
+    width: 450px;
+}
+
+#middleTextBottom {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #87879D;
+}
+
+.overlay {
+    border-image: fill 1 linear-gradient(
+        hsl(192.4 37.4% 48.2% / .7), 
+        hsl(192.4 37.4% 48.2% / .7)
+        ); 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 5rem;
+    background-image: url(assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 110%;
+    color: white;
+    width: 500px;
+}
+
+#footerMiddle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: white;
+    width: 355px;
+}
+
+#downloadBottom {
+    background-color: #855FB1;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 150%;
+    color: white;
+}
+
+#lightPurple {
+    color: #D9B8FF;
+}
